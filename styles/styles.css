@@ -112,9 +112,8 @@ figure{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 5px;
-    padding: 5px;
-    margin: 10px;
+    gap: 1rem;
+    padding: 1rem;
     grid-area: figure;
 }
 
@@ -128,7 +127,6 @@ img{
     grid-template-areas: 
         "h2"
         "ul"
-        "img"
         "figure";
 }
 
@@ -160,11 +158,6 @@ img{
     height: 10rem;
 }
 
-.imagen-decoracion{
-    width: 30rem;
-    height: 30rem;
-}
-
 .contenedor-productos{
     display: flex;
     flex-wrap: wrap;
@@ -181,7 +174,7 @@ img{
     padding: 5px;
 }
 
-/* CONTACTO */
+/* FAQ */
 .pregunta{
     font-weight: 700;
     margin: 10px;
@@ -191,8 +184,46 @@ img{
     margin: 0px 20px 20px;
 }
 
+/* CONTACTO */
 .enfasis{
     font-weight: 700;
+}
+
+.imagen-decoracion{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.grid-contacto{
+    display: grid;
+    grid-template-columns: minmax(200px, 1fr);
+    grid-template-areas: 
+        "ul"
+        "figure";
+}
+
+@media (min-width: 1024px){
+    .imagen-decoracion{
+        width: 75%;
+        height: 75%;
+    }
+
+    .grid-contacto{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(200px, 1fr));
+        grid-template-areas: 
+            "ul ul"
+            "figure figure";
+    }
+
+    .grid-contacto ul{
+        padding: 1rem;
+    }
+
+    .grid-contacto li{
+        padding: 0.5rem 0rem;
+    }
 }
 
 /* FOOTER */
