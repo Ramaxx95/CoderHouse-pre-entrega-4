@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Ultra&display=swap');
+
+/*Reset*/
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/*Declaracion de variables*/
+:root{
+    --color-fondo: #f5f570e0;
+    --color-secundario: #f5c66ee0;
+    --color-acento: #006781fb;
+}
+
+/*Header*/
+.imagen-logo{
+    width: 5rem;
+    height: 5rem;
+}
+
+.indice{
+    background-color: var(--color-secundario);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.indice ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.item-indice{
+    color: var(--color-acento);
+    text-decoration: none;
+}
+
+/*Main*/
+h1, h2, h3, h4, h5, h6{
+    font-family: Ultra, sans-serif;
+    font-weight: 200;
+}
+
+h1{
+    font-size: 2.5rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+h3{
+    font-size: 1.5rem;
+}
+
+p{
+    font-size: 1rem;
+}
+
+main{
+    padding: 20px;
+}
+
+body{
+    font-family: DynaPuff, sans-serif;
+    background-color: var(--color-fondo);
+    font-weight: 100;
+}
+
+section{
+    padding: 20px;
+}
+
+figure{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 5px;
+    margin: 10px;
+}
+
+.imagen-producto{
+    width: 10rem;
+    height: 10rem;
+}
+
+.imagen-decoracion{
+    width: 30rem;
+    height: 30rem;
+}
+
+.contenedor-productos{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.producto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-secundario);
+    border-radius: 6px;
+    padding: 5px;
+}
+
+.pregunta{
+    font-weight: 700;
+    margin: 10px;
+}
+
+.respuesta{
+    margin: 0px 20px 20px;
+}
+
+.enfasis{
+    font-weight: 700;
+}
+
+/*Footer*/
+footer{
+    background-color: var(--color-secundario);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
