@@ -123,7 +123,7 @@ img{
 
 .grid-pag-principal{
     display: grid;
-    grid-template-columns: minmax(200px, 1fr);
+    grid-template-columns: 1fr;
     grid-template-areas: 
         "h2"
         "ul"
@@ -160,7 +160,7 @@ img{
 
 .contenedor-productos{
     display: grid;
-    grid-template-columns: minmax(200px, 1fr);
+    grid-template-columns: 1fr;
     gap: 1rem;
 }
 
@@ -214,7 +214,7 @@ img{
 
 .grid-contacto{
     display: grid;
-    grid-template-columns: minmax(200px, 1fr);
+    grid-template-columns: 1fr;
     grid-template-areas: 
         "ul"
         "figure";
@@ -228,7 +228,7 @@ img{
 
     .grid-contacto{
         display: grid;
-        grid-template-columns: repeat(2, minmax(200px, 1fr));
+        grid-template-columns: repeat(2, 1fr);
         grid-template-areas: 
             "ul ul"
             "figure figure";
